@@ -15,7 +15,7 @@ select,
 button,
 textarea {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .grid-container {
@@ -81,14 +81,14 @@ footer {
 }
 .products li {
   flex: 0 1 29rem;
-  height: 47rem;
+  height: 38rem;
   padding: 1rem;
 }
 .product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: auto;
 }
 .product img {
   max-width: 37rem;
@@ -105,9 +105,10 @@ footer {
   flex: 1;
 }
 .product-price div {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .button {
+  margin: 0rem 4rem;
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
   background-color: #f0f0f0;

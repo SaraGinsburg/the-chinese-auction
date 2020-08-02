@@ -41,3 +41,16 @@ Project Development Workflow
 14. Create order object and pass to parent to handle it
 15. Publish changes
 
+#Create Products Backend
+1. Install nodemon globally
+2. Add server.js
+3. Install express body-parser mongoose shortid
+4. Install MongoDB
+5. app = express()
+6. app.use(bodyParser.json())
+7. mongoose.connect()
+8. create Product model
+9. app.post("/api.products")
+10. Postman send post request
+11. route.get("/api/products")
+12. route.delete("/api/products/:id")

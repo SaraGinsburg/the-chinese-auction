@@ -10,17 +10,25 @@ import Cart from './components/Cart';
      super();
      this.state = {
        products: data.products,
-       cartItems: [],
+       cartItems: localStorage.getItem("cartItems") 
+        ? JSON.parse(localStorage.getItem("cartItems"))
+        : [],
        season: "",
-       sort: "",
-      
+       sort: "",     
      };
+   }
+   createOrder = (order) => {
+    alert("need to save order for " + order.name)
    }
    removeFromCart = (product) => {
     const cartItems = this.state.cartItems.slice();
     this.setState({
       cartItems: cartItems.filter((x)=> x._id !== product._id)
     });
+    localStorage.setItem(
+      "cartItems",
+      JSON.stringify(cartItems.filter((x) => x._id !== product._id))
+    );
    };
    addToCart = (product) => {
      const cartItems = this.state.cartItems.slice(); //clone cartItems from state
@@ -34,7 +42,8 @@ import Cart from './components/Cart';
      if (!alreadyInCart) {
        cartItems.push({ ...product, count:1 }) //add an instance of product with a count=1 to cartItems
      }
-     this.setState({cartItems})
+     this.setState({cartItems});
+     localStorage.setItem('cartItems', JSON.stringify(cartItems))
    }
    sortProducts = (event) => {
      // impl
@@ -76,10 +85,10 @@ import Cart from './components/Cart';
           <div className="content">
             <div className="main">
               <Filter count={this.state.products.length}
-              season={this.state.season}
-              sort={this.state.sort}
-              filterProducts={this.filterProducts}
-              sortProducts={this.sortProducts}
+                season={this.state.season}
+                sort={this.state.sort}
+                filterProducts={this.filterProducts}
+                sortProducts={this.sortProducts}
               ></Filter>
               <Products 
                 products={this.state.products} 
@@ -87,7 +96,10 @@ import Cart from './components/Cart';
               ></Products>
             </div>
             <div className="sidebar">
-              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} />
+              <Cart
+                cartItems={this.state.cartItems} 
+                removeFromCart={this.removeFromCart}
+                createOrder={this.createOrder} />
             </div>
           </div>
         </main>

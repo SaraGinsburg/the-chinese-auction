@@ -28,6 +28,7 @@ mongoose.connect("mongodb://localhost/the-chinese-auction-db", {
 // mongoose.model is responsible for creating a model.
 // it accepts 2 parameters: the name of the collection inside the database, 
 // and a list of fields in this model
+//
 const Product = mongoose.model("products", new mongoose.Schema({
     _id: { type: String, default: shortid.generate},
     title: String,

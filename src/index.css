@@ -2,7 +2,7 @@
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 body,
 #root {
@@ -15,7 +15,7 @@ select,
 button,
 textarea {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .grid-container {
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ff8000
+  color: #ff8000;
 }
 header {
   grid-area: header;
@@ -81,14 +81,14 @@ footer {
 }
 .products li {
   flex: 0 1 29rem;
-  height: 38rem;
+  height: 47rem;
   padding: 1rem;
 }
 .product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: auto;
+  height: 100%;
 }
 .product img {
   max-width: 37rem;
@@ -105,10 +105,9 @@ footer {
   flex: 1;
 }
 .product-price div {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .button {
-  margin: 0rem 4rem;
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
   background-color: #f0f0f0;
@@ -128,7 +127,7 @@ footer {
   margin: 1rem;
   border-bottom: 0.1rem #c0c0c0 solid;
 }
-.filter div{
+.filter div {
   flex: 1;
 }
 /* Index.css */
@@ -190,10 +189,7 @@ form {
 input {
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
-
-
 }
-
 /* Product Details */
 .product-details {
   display: flex;

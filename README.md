@@ -78,4 +78,58 @@ Project Development Workflow
 20. Pull request, merge, change to master
 21. Task Management Spreadsheet set to done
 
+Node.JS
 
+#Create Products Backend
+1.  Install nodemon globally
+2. Add server.js
+3. Install express body-parser mongoose shortid
+4. Install MongoDB
+5. app = express()
+6. app.use(bodyParser.json())
+7. mongoose.connect()
+8. create Product model
+9. app.post("/api.products")
+10. Postman send post request
+11. route.get("/api/products")
+12. route.delete("/api/products/:id")
+
+Redux
+
+#Add Redux
+1. what is redux (diagram)
+2. update task on spreadsheet
+3. create branch add-redux-products
+4. npm install redux react-redux redux-thunk
+5. create types
+6. types.js
+7. define FETCH_PRODUCTS
+8. actions/productActions.js
+9. declare fetchProducts
+10. create reducers
+11. reducers/productReducers.js
+12. define case FETCH_PRODUCTS
+13. create store
+14. store.js
+15. import redux
+16. set initial state
+17. define initialState
+18. create store
+19. import productReducers
+20. combine reducers
+21. Use store
+22. App.js
+23. import store
+24. wrap all in Provider
+25. connect products
+26. components/Products.js
+27. connect to store
+28. import fetchProducts
+29. fetch products on did mount
+30. package.json
+31. set proxy to http://127.0.0.1:5000
+32. npm run server
+33. check products list
+34. commit and publish
+35. send pull request and merge
+36. update spreadsheet

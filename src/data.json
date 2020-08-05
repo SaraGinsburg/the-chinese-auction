@@ -10,7 +10,7 @@
       },
       {
         "_id": "vac2",
-        "image": "/images/Markham - Residence inn.jpg",
+        "image": "/images/Markham_Residence_inn.jpg",
         "title": "Toronto Getaway for Two",
         "description": "Welcome to Toronto! Unwind at the beautitul Residence Inn - Markham.In the morning, enjoy a complimentary hotel breakast, stop at ShellSolution (use the $50 gif certiicate), then enjoy Chinese food for lunch from Golden Chopsticks and don’t forget the heavenly Grodzinski’sBakery (use the $36 gif certiicate)!",
         "availableSeasons": ["Summer",  "Spring", "Fall"],
@@ -18,7 +18,7 @@
       },
       {
         "_id": "vac3",
-        "image": "/images/secret caverns Albany.jpg",
+        "image": "/images/secret_caverns_Albany.jpg",
         "title": "Family Trip to Albany",
         "description": "You’ll really enjoy a family trip to the state’s capital area! Visit the thrilling, mystifying Secret Caverns (4 free admissions) and the famous National Baseball Hall of Fame (2 free admissions) in nearby Cooperstown. Then, spend a night at the elegant Albany Marriott! In the morning, tour the USS Slater, the last remaining WWII Destroyer Escortship, moored in the Hudson River in Albany (5 ree admission",
         "availableSeasons": ["Summer",  "Spring", "Fall"],
@@ -26,23 +26,22 @@
       },
       {
         "_id": "vac4",
-        "image": "/images/Toronto - Science Center.jpg",
+        "image": "/images/Toronto_Science_Center.jpg",
         "title": "Take the Family to Toronto!",
-        "description": "Win this package for a family vacation in Toronto! You’ll stay at Spring Hill Suites Toronto Vaughan (two Complimentary One NightStays in a suite with Breakfast). Located near top attractions in Ontario, your family will love visiting the Ontario Science Centre(includes admission or 4) - where questions spark discovery!The Ontario Science Centre invites you to an exciting visit ullo exploration, adventure and innovation with more than 500interactive exhibits, live science demonstrations, a real-lie rainorest, a science arcade and planetarium. ",
-        "availableSeasons": ["Winter",  "Spring", "Fall"],
+        "description": "Win this package for a family vacation in Toronto! You’ll stay at Spring Hill Suites Toronto Vaughan (two Complimentary One NightStays in a suite with Breakfast). Located near top attractions in Ontario, your family will love visiting the Ontario Science Centre(includes admission for 4) - where questions spark discovery!The Ontario Science Centre invites you to an exciting visit full of exploration, adventure and innovation with more than 500interactive exhibits, live science demonstrations, a real-life rain forest, a science arcade and planetarium. ",       "availableSeasons": ["Winter",  "Spring", "Fall"],
         "price": 36.00
       },
       {
         "_id": "vac5",
-        "image": "/images/WonderWorks Syracuse.jpg",
+        "image": "/images/WonderWorks_Syracuse.jpg",
         "title": "Take the Family to Wonderworks",
-        "description": "Four General Admission Tickets to WonderWorks!Located in Destiny Mall in Syracuse, it is aninteractive attraction combining education andaﬀordable, quality entertainment that is un or allages! WonderWorks challenges the mind, sparks theimagination and leads the way as the top interactiveattraction!",
+        "description": "Four General Admission Tickets to WonderWorks!Located in Destiny Mall in Syracuse, it is aninteractive attraction combining education andaﬀordable, quality entertainment that is fun for allages! WonderWorks challenges the mind, sparks theimagination and leads the way as the top interactiveattraction!",
         "availableSeasons": ["Winter",  "Spring", "Fall"],
         "price": 50.00
       },
       {
         "_id": "vac6",
-        "image": "/images/batavia water park.jpg",
+        "image": "/images/batavia_water_park.jpg",
         "title": "Spend the Night at a Waterpark",
         "description": "Be the best parents on the block: Take your family to Batavia for a night at the Quality Inn & Suitesand then show them the four free passes to the Palm Island Indoor Water Park!",
         "availableSeasons": ["Summer",  "Spring"],

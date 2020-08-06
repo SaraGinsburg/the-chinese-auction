@@ -102,11 +102,11 @@ class Products extends Component {
   }
 }
 // connect accepts 2 parameters, 
-// first parameter is a function that accepts the store's state and returns-defines
+// first parameter is a function that accepts the store's state and returns/defines
 // which part of redux state we will be using
 // second parameter of connect is a list of actions.
 // the connect function returns another function, that accepts as a parameter
 // the name of a component we are going to connect
-export default connect((state) => ({ products: state.products.items }), {
+export default connect((state) => ({ products: state.products.filteredItems }), {
   fetchProducts,
 })(Products);

@@ -155,3 +155,26 @@ Redux
 18. remove Filter props
 19. check result
 20. update task and branch
+
+#Add Redux To Cart
+1. Updte task and branch
+2. types.js
+3. create ADD_TO_CART
+4. create REMOVE_FROM_CART
+5. actions/cartActions.js
+6. create addToCart
+7. create removeFromCart
+8. reducers/cartReducers.js
+9. case ADD_TO_CART
+10. case REMOVE_FROM_CART
+11. Cart.js
+12. connect props: cartItems
+13. connect actions: removeFromCart
+14. Product.js
+15. add action addToCart
+16. App.js
+17. remove Cart props
+18. store.js
+19. set initial cartItems to localStorage
+20. check result
+21. update task and branch

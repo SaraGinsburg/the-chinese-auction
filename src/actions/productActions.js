@@ -1,7 +1,7 @@
 
+import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SEASON, ORDER_PRODUCTS_BY_PRICE } from "../types";
 // the fetchActions returns a new function. This function accepts a dispatch.
 // res will contain the list of products.
-import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SEASON, ORDER_PRODUCTS_BY_PRICE } from "../types";
 
 // dispatch accepts an object that contains 2 values: type and payload
 // json function returns a promise, therefore we need an await

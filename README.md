@@ -209,3 +209,38 @@ Advanced Topics
 25. render()
 26. const { cartItems, order } = this.props;
 27. {order && (}
+
+#Manage Orders
+1. Add new page
+2. Install react-router-dom
+3. App.js
+4. Import BrowserRouter, Route, Link
+5. render()
+6. BrowserRouter
+7. Route path="/admin" component={AdminScreen}
+8. Route path="/" exact={true} component={HomeScreen}
+9. HomeScreen.js
+10. AdminScreen.js
+11. components/Orders.js
+12. render()
+13. Orders
+14. Backend
+15. server.js
+16. app.get("/api/orders")
+17. app.delete("/api/orders/:id")
+18. Frontend
+19. types.js
+20. FETCH_ORDERS
+21. actions/orderActions.js
+22. fetchOrders()
+23. reducers/orderReducers.js
+24. case FETCH_ORDERS {orders: action.payload}
+25. components/Orders.js
+26. connect orders, fetchOrders
+27. componentDidMount() fetchOrders
+28. render()
+29. !orders
+30. Loading...
+31. table orders
+32. index.css
+33. style orders

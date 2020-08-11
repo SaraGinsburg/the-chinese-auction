@@ -22,3 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 package-lock.json
+yarn.lock
+
+#             
+# mongodb+srv://chinese-auction-test:Nachat5780@cluster0.pnqfl.mongodb.net/test?retryWrites=true&w=majority

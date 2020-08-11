@@ -16,14 +16,20 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json());
 
+// these 2 lines will get the website running in production mode
+app.use("/", express.static(__dirname + "/build"));
+app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"))
+
 // initialize mongoose database. connect has 2 parameters:
 // first = url of connection to the Mongoose database 
 // second = options
-mongoose.connect("mongodb://localhost/chinese-auction-db", {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect(
+    process.env.MONGODB_URL || "mongodb://localhost/chinese-auction-db", 
+    {
+        useNewUrlParser: true,
+        useCreateIndex: true,
+        useUnifiedTopology: true,
+    });
 
 // define the Product model. 
 // mongoose.model is responsible for creating a model.

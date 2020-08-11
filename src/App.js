@@ -23,7 +23,7 @@ class App extends React.Component {
               <Route path="/" component={HomeScreen} exact />
               
             </main>
-            <footer>All right is reserved.</footer>
+            <footer>All rights reserved.</footer>
           </div>
         </BrowserRouter>
       </Provider>

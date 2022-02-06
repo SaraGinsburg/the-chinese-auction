@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
   font-size: 62.5%;
@@ -21,9 +21,9 @@ textarea {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    'header'
+    'main'
+    'footer';
   grid-template-rows: 5rem 1fr 5rem;
   grid-template-columns: 1fr;
   height: 100%;
@@ -38,8 +38,8 @@ header {
   grid-area: header;
   background-color: #203040;
   color: #ffffff;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
 }
@@ -81,15 +81,9 @@ footer {
   list-style-type: none;
 }
 .products li {
-  /* flex: 0 1 29rem;
-  height: 47rem;
-  padding: 1rem; */
-  list-style-type: none;
-  padding: 0;
   flex: 0 1 29rem;
-  margin: 1rem 1rem 0 1rem;
-  height: 40rem;
-  border: 0.1rem #c0c0c0 solid;
+  height: 47rem;
+  padding: 1rem;
 }
 .product {
   display: flex;
@@ -100,14 +94,10 @@ footer {
 .product img {
   max-width: 37rem;
   max-height: 37rem;
-  margin: 1rem;
-}
-.product p {
-  text-align: center;
 }
 .product-price {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .product-price div,
@@ -225,6 +215,7 @@ input {
 }
 
 /* Order Details */
+
 .order-details {
   display: flex;
   flex-direction: column;
@@ -244,7 +235,6 @@ input {
   text-align: right;
   padding: 0;
 }
-
 .success-message {
   color: green;
 }

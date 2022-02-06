@@ -14,7 +14,7 @@ app.get('/', (req, res) => res.sendFile(__dirname + '/build/index.html'));
 // first = url of connection to the Mongoose database
 // second = options
 mongoose.connect(
-  process.env.MONGODB_URL || 'mongodb://localhost/ChineseAuction',
+  process.env.MONGODB_URL || 'mongodb://localhost/chinese-auction',
   {
     useNewUrlParser: true,
     useCreateIndex: true,
